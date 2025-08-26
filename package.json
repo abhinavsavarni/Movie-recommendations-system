@@ -1,0 +1,12 @@
+{
+    "name": "movie-recommendation-system",
+    "version": "1.0.0",
+    "description": "A full-stack movie recommendation system",
+    "scripts": {
+        "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\"",
+        "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.0"
+    }
+}
