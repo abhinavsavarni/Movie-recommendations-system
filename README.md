@@ -37,7 +37,7 @@ movie-recommendation-system/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/SaanviGupta2005/movie-recommendation-system.git
+git clone https://github.com/abhinavsavarni/Movie-recommendations-system.git
 cd movie-recommendation-system
 ```
 
@@ -116,7 +116,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Saanvi Gupta - Initial work
+- Abhinav Savarni - Initial work
 
 ## 🙏 Acknowledgments
 
