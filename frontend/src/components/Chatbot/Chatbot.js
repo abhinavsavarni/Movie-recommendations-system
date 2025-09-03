@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Chatbot.css';
+import { getApiUrl } from '../../config/api';
 
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +37,8 @@ const Chatbot = () => {
         setIsLoading(true);
 
         try {
-            // Adjust this URL if your backend runs on a different port during development
-            const response = await fetch('/api/chatbot/query', {
+            // Use the configured API URL for the deployed backend
+            const response = await fetch(getApiUrl('/api/chatbot/query'), {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
