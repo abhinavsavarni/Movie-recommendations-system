@@ -5,6 +5,11 @@ const router = express.Router();
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
+// Health check endpoint (temporary until main index.ts is updated)
+router.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
+});
+
 // Get popular movies
 router.get('/popular', async (req, res) => {
     try {

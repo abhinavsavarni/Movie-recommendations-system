@@ -4,9 +4,10 @@
     "description": "Backend for movie recommendation system",
     "main": "src/index.ts",
     "scripts": {
-        "start": "ts-node src/index.ts",
+        "start": "node dist/index.js",
         "dev": "nodemon src/index.ts",
         "build": "tsc",
+        "postbuild": "cp package.json dist/",
         "test": "jest"
     },
     "dependencies": {

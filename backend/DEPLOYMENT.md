@@ -31,7 +31,13 @@ The backend is configured to allow requests from:
 1. **Build Command**: `npm install && npm run build`
 2. **Start Command**: `npm start`
 3. **Environment**: Node.js
-4. **Auto-Deploy**: Enable for automatic deployments
+4. **Port**: 10000 (Render free tier requirement)
+5. **Auto-Deploy**: Enable for automatic deployments
+
+**Important:** Make sure your Render service is configured with:
+- Build Command: `npm install && npm run build`
+- Start Command: `npm start`
+- Port: 10000
 
 ## Health Check Endpoint
 
