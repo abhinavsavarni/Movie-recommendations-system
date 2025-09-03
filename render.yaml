@@ -1,0 +1,19 @@
+
+services:
+  - type: web
+    name: movie-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    region: oregon
+
+  - type: web
+    name: movie-ml
+    env: python
+    rootDir: ml_model
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
+    region: oregon
